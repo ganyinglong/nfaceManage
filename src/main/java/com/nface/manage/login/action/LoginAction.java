@@ -1,23 +1,22 @@
 package com.nface.manage.login.action;
 
 import com.nface.manage.base.BaseAction;
-import com.nface.manage.login.dao.UserDAO;
-import com.nface.manage.login.dto.Usr;
+import com.nface.manage.login.dto.UserDTO;
+import com.nface.manage.login.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.List;
-
 @Controller
-@RequestMapping(value = "login")
+@RequestMapping(value = "loginAction")
 public class LoginAction extends BaseAction {
     @Autowired
-    UserDAO userDAO;
+    LoginService loginService;
 
-    @RequestMapping(value = "query")
-    public List<Usr> querUserList(){
-        System.out.println("进来了");
-        return userDAO.querUserList();
+    @RequestMapping("register")
+    public Boolean register(@RequestBody UserDTO user){
+        return loginService.register(user);
     }
 }

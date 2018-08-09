@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nface.manage.login.dao.UserDAO">
-    <select id="querUserList" resultType="com.nface.manage.login.dto.Usr">
-        select id_user userID,
-        user_name userName,
-        user_password password
-        from nface_manage_db.user_info
-    </select>
+
+    <insert id="register" parameterType="com.nface.manage.login.dto.UserDTO">
+        insert into nface_manage_db.user_info values(
+          REPLACE(UUID(),'-',''),
+          #{userName}#,
+          #{password}#,
+          #{departMentCode}#,
+          #{mobile}#,
+          #{email}#,
+          #{chName}#
+        )
+    </insert>
 
 </mapper>
