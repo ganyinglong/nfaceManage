@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc68d78-6e7e-4c7e-8318-59e0421effa8" name="Default" comment="环境搭建">
-      <change afterPath="$PROJECT_DIR$/dml&amp;ddl/ddl_create_table_user_info_01_root.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/action/Myservlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/dto/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nface/manage/login/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapping/user/sqlmapping-user" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapping/user/sqlmapping-user" afterDir="false" />
-    </list>
+    <list default="true" id="3fc68d78-6e7e-4c7e-8318-59e0421effa8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/impl/LoginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="375">
               <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDTO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/dto/UserDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
@@ -546,7 +536,7 @@
       <workItem from="1533741283765" duration="5095000" />
       <workItem from="1533777069066" duration="5949000" />
       <workItem from="1533786252443" duration="900000" />
-      <workItem from="1533797964945" duration="9109000" />
+      <workItem from="1533797964945" duration="9406000" />
     </task>
     <task id="LOCAL-00001" summary="环境搭建">
       <created>1533798745822</created>
@@ -562,15 +552,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533798882901</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="注册">
+      <created>1533807200509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533807200510</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21053000" />
+    <option name="totallyTimeSpent" value="21350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -590,11 +586,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3281471" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3281471" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25871313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25871313" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -648,7 +644,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="环境搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="环境搭建" />
+    <MESSAGE value="注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,16 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1011,13 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1037,6 +1017,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nface/manage/login/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
