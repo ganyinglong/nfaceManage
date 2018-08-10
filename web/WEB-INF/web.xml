@@ -14,6 +14,16 @@
         <param-value>WEB-INF/applicationContext.xml</param-value>
     </context-param>
 
+    <servlet>
+        <servlet-name>defaultServlet</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>defaultServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
 
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>

@@ -1,20 +1,27 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
     <title>测试页面</title>
-  </head>
-  <script src="vue_js/vue.js"/>
-  <body>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--<script src="vue_js/vue.js"/>-->
 
-  <h1 id="hh"> {{msg}}</h1>
+<body>
 
-  <script>
-    new v({
-        el:'#hh',
-        data:{
-            msg:'7890'
+<div id="app">
+    {{message}}
+
+</div>
+<h1>这是一个静态的</h1>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: '7890'
         }
     })
-    
-  </script>
-  </body>
+</script>
+
+</body>
 </html>
