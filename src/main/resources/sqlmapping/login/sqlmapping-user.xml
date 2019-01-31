@@ -2,6 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.nface.manage.login.dao.UserDAO">
+
+    <resultMap id="userInfo" type="com.nface.manage.login.dto.UserDTO">
+        <result property="userName" column="user_name"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userID" column="id_user"/>
+        <result property="departmentCode" column="department_code"/>
+        <result property="mobile" column="mobile"/>
+        <result property="email" column="email"/>
+        <result property="chName" column="ch_name"/>
+    </resultMap>
+
     <insert id="register" parameterType="com.nface.manage.login.dto.UserDTO">
         insert into nface_manage_db.user_info values (
             replace(uuid(), '-', ''),
@@ -13,6 +24,33 @@
             #{chName}
         )
     </insert>
+
+    <delete id="removeUser" parameterType="java.lang.String">
+        delete from nface_manage_db.user_info
+        where
+            user_name = #{userName}
+    </delete>
+
+    <select id="querUser" parameterType="java.util.Map" resultMap="userInfo">
+        select
+            id_user,
+            user_name,
+            user_password,
+            department_code,
+            mobile,
+            email,
+            ch_name
+        from nface_manage_db.user_info
+        where user_name = #{userName}
+              and user_password = #{userPassword}
+    </select>
+
+    <select id="countUser" parameterType="java.util.Map" resultType="java.lang.Integer">
+        select count(1)
+        from nface_manage_db.user_info
+        where user_name = #{userName}
+              and user_password = #{userPassword}
+    </select>
 
 
 </mapper>

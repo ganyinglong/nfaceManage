@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nface.manage.biz.dao.CustomerDAO">
+    <select id="countCustomer">
+        select count(1) from app_db.consumer_info
+        where cs_state = '1'
+    </select>
+</mapper>

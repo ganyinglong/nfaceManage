@@ -1,22 +1,28 @@
 package com.nface.manage.login.action;
 
-import com.nface.manage.base.BaseAction;
-import com.nface.manage.login.dto.UserDTO;
 import com.nface.manage.login.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
 
 @Controller
 @RequestMapping(value = "loginAction")
-public class LoginAction extends BaseAction {
+public class LoginAction {
     @Autowired
     LoginService loginService;
 
-    @RequestMapping("register")
-    public Boolean register(@RequestBody UserDTO user){
-        return loginService.register(user);
+    @RequestMapping("login")
+    public String login(HttpServletRequest request) {
+
+        Map<String, Object> login = loginService.login(request);
+        Object resultCode = login.get("resultCode");
+        if ("success".equals(resultCode)) {
+            return "index";
+        }
+        return "/src/login/login.html";
     }
 
 

@@ -19,11 +19,23 @@
             <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
-    <!-- 视图解析器
+
+    <!--freeMarker视图解析器-->
+    <!--<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="prefix" value="/src/login/"/>
+        <property name="suffix" value=".html"/>
+        <property name="order" value="0"/>
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+    </bean>-->
+
+    <!--json解析器-->
+    <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+    </bean>
+
+    <!--jsp解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-        -->
+
 </beans>
